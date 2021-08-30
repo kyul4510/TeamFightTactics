@@ -25,30 +25,30 @@ public class TFTController {
 	
 	@RequestMapping("/")
 	public String home(Locale locale, Model model) {
-		System.out.println("Controller : home È£Ãâ");
+		System.out.println("Controller : home í˜¸ì¶œ");
 		return "home";
 	}
 	
 	@RequestMapping(value="summonerInfo")
 	@ResponseBody
 	public TFTSummonerVO summonerInfo(HttpServletRequest request, Model model) {
-		System.out.println("Controller : summonerInfo È£Ãâ");
+		System.out.println("Controller : summonerInfo í˜¸ì¶œ");
 		summonerInfo = dao.getSummoner(request.getParameter("summonerName"));
-		System.out.println("Controller : summonerInfo Á¾·á");
+		System.out.println("Controller : summonerInfo ì¢…ë£Œ");
 		return summonerInfo;
 	}
 	
 	@RequestMapping(value="matchInfo")
 	@ResponseBody
 	public ArrayList<JSONObject> matchInfo(HttpServletRequest request, Model model) {
-		System.out.println("Controller : matchInfo È£Ãâ");
+		System.out.println("Controller : matchInfo í˜¸ì¶œ");
 //		TFTMatchInfoVO[] matchinfos;
 		if(summonerInfo != null) {
 			summonerInfo.setMatchList(dao.getMatches(summonerInfo.getPuuid(), 10));
 	//		matchinfos = dao.getMatchInfo(SummonerInfo.getMatchList());
 			json = dao.getMatchInfo2(summonerInfo.getMatchList());
 		}
-		System.out.println("Controller : matchInfo Á¾·á");
+		System.out.println("Controller : matchInfo ì¢…ë£Œ");
 		return json;
 //		return matchinfos;
 	}
@@ -56,7 +56,7 @@ public class TFTController {
 	@RequestMapping(value="viewMore")
 	@ResponseBody
 	public ArrayList<JSONObject> viewMore(HttpServletRequest request, Model model) {
-		System.out.println("Controller : viewMore È£Ãâ");
+		System.out.println("Controller : viewMore í˜¸ì¶œ");
 		int page = Integer.parseInt(request.getParameter("page"));
 		if(summonerInfo != null) {
 			summonerInfo.setMatchList(dao.getMatches(summonerInfo.getPuuid(), (page + 10)));
@@ -69,7 +69,7 @@ public class TFTController {
 			System.out.println(summonerInfo.toString());
 			json = dao.getMatchInfo2(summonerInfo.getMatchList());
 		}
-		System.out.println("Controller : viewMore Á¾·á");
+		System.out.println("Controller : viewMore ì¢…ë£Œ");
 		return json;
 	}
 }

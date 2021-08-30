@@ -46,34 +46,34 @@ public class TFTDAO {
 	String APIkey = "RGAPI-fc2aeaf3-fd57-4421-9e1b-bcdd08d93a1d";
 	
 	public TFTSummonerVO getSummoner(String nickname) {
-		System.out.println("TFTDAO : ¼ÒÈ¯»ç Á¤º¸ °¡Á®¿À±â");
+		System.out.println("TFTDAO : ì†Œí™˜ì‚¬ ì •ë³´ ê°€ì ¸ì˜¤ê¸°");
 		
-		//ÇÑ±Û ´Ğ³×ÀÓ URL ÀÎÄÚµù
+		//í•œê¸€ ë‹‰ë„¤ì„ URL ì¸ì½”ë”©
 		try {
 			nickname = URLEncoder.encode(nickname, "UTF-8");
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		//°ø¹é ¹®ÀÚ + ÀÎÄÚµù µÈ °ÍÀ» %20À¸·Î º¯°æ
+		//ê³µë°± ë¬¸ì + ì¸ì½”ë”© ëœ ê²ƒì„ %20ìœ¼ë¡œ ë³€ê²½
 		nickname = nickname.replace("+", "%20");
 		
 		RestTemplate restTemplate = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
-		headers.set("X-Riot-Token", APIkey); //APIÅ° Á¤º¸ Çì´õ Ãß°¡
+		headers.set("X-Riot-Token", APIkey); //APIí‚¤ ì •ë³´ í—¤ë” ì¶”ê°€
 		
 		HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
-		//·Ñ ¼­¹ö¿¡ ¿äÃ»
+		//ë¡¤ ì„œë²„ì— ìš”ì²­
 		URI url = URI.create("https://kr.api.riotgames.com/tft/summoner/v1/summoners/by-name/" + nickname);
-		//¿äÃ» ÀÀ´ä ¹ŞÀ½
+		//ìš”ì²­ ì‘ë‹µ ë°›ìŒ
 		ResponseEntity<String> response;
 		try {
 			response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
 		} catch (Exception e) {
 			return null;
 		}
-		//ÀÀ´ä¹ŞÀº µ¥ÀÌÅÍ VO¿¡ ÀÔ·Â
+		//ì‘ë‹µë°›ì€ ë°ì´í„° VOì— ì…ë ¥
 		ObjectMapper om = new ObjectMapper();
 		TFTSummonerVO summonerVO = new TFTSummonerVO();
 		try {
@@ -88,22 +88,22 @@ public class TFTDAO {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("TFTDAO ¼ÒÈ¯»ç ÀÌ¸§ : " + summonerVO.getName());
-		System.out.println("TFTDAO : ¼ÒÈ¯»ç Á¤º¸ °¡Á®¿À±â ¿Ï·á");
+		System.out.println("TFTDAO ì†Œí™˜ì‚¬ ì´ë¦„ : " + summonerVO.getName());
+		System.out.println("TFTDAO : ì†Œí™˜ì‚¬ ì •ë³´ ê°€ì ¸ì˜¤ê¸° ì™„ë£Œ");
 		return summonerVO;
 	}
 	
 	public String[] getMatches(String puuid, int count) {
-		System.out.println("TFTDAO : ¼ÒÈ¯»ç ¸ÅÄ¡¸®½ºÆ® °¡Á®¿À±â");
+		System.out.println("TFTDAO : ì†Œí™˜ì‚¬ ë§¤ì¹˜ë¦¬ìŠ¤íŠ¸ ê°€ì ¸ì˜¤ê¸°");
 		RestTemplate restTemplate = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
-		headers.set("X-Riot-Token", APIkey); //Çì´õ¿¡ APIÅ° Ãß°¡
+		headers.set("X-Riot-Token", APIkey); //í—¤ë”ì— APIí‚¤ ì¶”ê°€
 		
 		HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
 		URI url = URI.create("https://asia.api.riotgames.com/tft/match/v1/matches/by-puuid/" + puuid + "/ids?count=" + count);
 		
-		ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class); //¿äÃ»À» º¸³»¾î °á°ú¸¦ ¹Ş¾Æ¿È
+		ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class); //ìš”ì²­ì„ ë³´ë‚´ì–´ ê²°ê³¼ë¥¼ ë°›ì•„ì˜´
 		
 		String matches = response.getBody().toString();
 		matches = matches.replace("[", "");
@@ -114,30 +114,30 @@ public class TFTDAO {
 			System.out.println(matchList[i]);
 		}
 		
-		System.out.println("TFTDAO : ¼ÒÈ¯»ç ¸ÅÄ¡¸®½ºÆ® °¡Á®¿À±â ¿Ï·á");
+		System.out.println("TFTDAO : ì†Œí™˜ì‚¬ ë§¤ì¹˜ë¦¬ìŠ¤íŠ¸ ê°€ì ¸ì˜¤ê¸° ì™„ë£Œ");
 		return matchList;
 	}
 	
 	public TFTMatchInfoVO[] getMatchInfo(String[] matchList) {
-		System.out.println("TFTDAO : ¸ÅÄ¡»ó¼¼Á¤º¸ °¡Á®¿À±â");
-		String result = ""; //json °´Ã¼ ´ãÀ» °Í
+		System.out.println("TFTDAO : ë§¤ì¹˜ìƒì„¸ì •ë³´ ê°€ì ¸ì˜¤ê¸°");
+		String result = ""; //json ê°ì²´ ë‹´ì„ ê²ƒ
 		JSONParser parser = new JSONParser();
-		JSONObject json = null; // json ¿øº»
-		TFTMatchInfoVO[] matchInfos = new TFTMatchInfoVO[matchList.length]; //matchInfo 10°ÔÀÓ
-		TFTMatchInfoVO matchInfo = new TFTMatchInfoVO(); //metadata, info µé ´ã°íÀÖÀ½
-		TFTMetadataVO metadataVO = new TFTMetadataVO(); //metadata ´ã°í ÀÖÀ½
-		TFTInfoVO infoVO = new TFTInfoVO(); //info ´ã°í ÀÖÀ½
+		JSONObject json = null; // json ì›ë³¸
+		TFTMatchInfoVO[] matchInfos = new TFTMatchInfoVO[matchList.length]; //matchInfo 10ê²Œì„
+		TFTMatchInfoVO matchInfo = new TFTMatchInfoVO(); //metadata, info ë“¤ ë‹´ê³ ìˆìŒ
+		TFTMetadataVO metadataVO = new TFTMetadataVO(); //metadata ë‹´ê³  ìˆìŒ
+		TFTInfoVO infoVO = new TFTInfoVO(); //info ë‹´ê³  ìˆìŒ
 		TFTParticipantVO participantVO = new TFTParticipantVO();
 		TFTParticipantVO[] participantVOs = new TFTParticipantVO[8];
 		TFTCompanionVO companionVO = new TFTCompanionVO();
 		TFTTraitVO traitVO = new TFTTraitVO();
 		TFTUnitVO unitVO = new TFTUnitVO();
 		for (int i = 0; i < matchList.length; i++) {
-			result = getHttpHTML(matchList[i]); //json string °¡Á®¿À±â
+			result = getHttpHTML(matchList[i]); //json string ê°€ì ¸ì˜¤ê¸°
 			try {
-				json = (JSONObject) parser.parse(result); //jsonObject·Î ÆÄ½Ì
+				json = (JSONObject) parser.parse(result); //jsonObjectë¡œ íŒŒì‹±
 				
-				/* metadata json ÆÄ½Ì */
+				/* metadata json íŒŒì‹± */
 				JSONObject metadata = (JSONObject) json.get("metadata");
 				metadataVO.setData_version(Integer.parseInt((String) metadata.get("data_version")));
 				metadataVO.setMatch_id((String)metadata.get("match_id"));
@@ -149,7 +149,7 @@ public class TFTDAO {
 				String[] participantsArray = participantsList.toArray(new String[participantsList.size()]);
 				metadataVO.setParticipants(participantsArray);
 				
-				/* info json ÆÄ½Ì */
+				/* info json íŒŒì‹± */
 				JSONObject info = (JSONObject) json.get("info");
 				infoVO.setGame_datetime((Long)info.get("game_datetime"));
 				infoVO.setTft_set_number(((Long)info.get("tft_set_number")).intValue());
@@ -216,14 +216,14 @@ public class TFTDAO {
 //				game_length = ((Double) info.get("game_length")).floatValue();
 //				SimpleDateFormat day = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 //				String str = day.format(new Date(game_datetime));
-//				System.out.println("°ÔÀÓ ³¯Â¥ : " + str);
+//				System.out.println("ê²Œì„ ë‚ ì§œ : " + str);
 //				int ig = Math.round(game_length);
-//				System.out.println("°ÔÀÓ ÀüÃ¼ ±æÀÌ : " + ig / 3600 + "½Ã" + ig / 60 + "ºĞ" + ig % 60 + "ÃÊ");
+//				System.out.println("ê²Œì„ ì „ì²´ ê¸¸ì´ : " + ig / 3600 + "ì‹œ" + ig / 60 + "ë¶„" + ig % 60 + "ì´ˆ");
 				matchInfo.setInfo(infoVO);
 				matchInfo.setMetadata(metadataVO);
 				
 				matchInfos[i] = matchInfo;
-				System.out.println("TFTDAO : ¸ÅÄ¡»ó¼¼Á¤º¸ °¡Á®¿À±â ¿Ï·á");
+				System.out.println("TFTDAO : ë§¤ì¹˜ìƒì„¸ì •ë³´ ê°€ì ¸ì˜¤ê¸° ì™„ë£Œ");
 			} catch (ParseException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -234,18 +234,18 @@ public class TFTDAO {
 //		RestTemplate restTemplate = new RestTemplate();
 //		HttpHeaders headers = new HttpHeaders();
 //		headers.setContentType(MediaType.APPLICATION_JSON);
-//		headers.set("X-Riot-Token", APIkey); //Çì´õ¿¡ APIÅ° Ãß°¡
+//		headers.set("X-Riot-Token", APIkey); //í—¤ë”ì— APIí‚¤ ì¶”ê°€
 //		HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
 //		for (int i = 0; i < 1; i++) {
-//			System.out.println("¿äÃ» : " + matchList[i]);
+//			System.out.println("ìš”ì²­ : " + matchList[i]);
 //			URI url = URI.create("https://asia.api.riotgames.com/tft/match/v1/matches/" + matchList[i]);
 //			ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
 //			System.out.println(url);
 //			matchList[i] = response.getBody().toString();
-//			System.out.println("ÀÀ´ä : " + matchList[i]);
+//			System.out.println("ì‘ë‹µ : " + matchList[i]);
 //		}
 		
-		//header ¾øÀÌ
+		//header ì—†ì´
 //		RestTemplate restTemplate = new RestTemplate(); 
 //		URI uri = UriComponentsBuilder.fromHttpUrl("https://asia.api.riotgames.com/tft/match/v1/matches/KR_4178897041")
 //				.queryParam("api_key", "RGAPI-d2c9c175-f8f9-43cf-b6ca-40192a7f14f0").build().toUri(); 
@@ -255,18 +255,18 @@ public class TFTDAO {
 	}
 	
 	public ArrayList<JSONObject> getMatchInfo2(String[] matchList) {
-		System.out.println("TFTDAO : ¸ÅÄ¡»ó¼¼Á¤º¸ °¡Á®¿À±â");
-		String result = ""; //json °´Ã¼ ´ãÀ» °Í
+		System.out.println("TFTDAO : ë§¤ì¹˜ìƒì„¸ì •ë³´ ê°€ì ¸ì˜¤ê¸°");
+		String result = ""; //json ê°ì²´ ë‹´ì„ ê²ƒ
 		JSONParser parser = new JSONParser();
-		JSONObject json = null; // json ¿øº»
+		JSONObject json = null; // json ì›ë³¸
 		ArrayList<JSONObject> jsons = new ArrayList<JSONObject>();
 		JSONObject temp;
 		String str;
 		for (int i = 0; i < matchList.length; i++) {
-			result = getHttpHTML(matchList[i]); //json °¡Á®¿À±â
+			result = getHttpHTML(matchList[i]); //json ê°€ì ¸ì˜¤ê¸°
 			try {
 				if(result.length() != 0) {
-					json = (JSONObject) parser.parse(result); //jsonObject·Î ÆÄ½Ì
+					json = (JSONObject) parser.parse(result); //jsonObjectë¡œ íŒŒì‹±
 					
 					temp = (JSONObject) json.get("info");
 					str = (String) temp.get("game_version");
@@ -282,7 +282,7 @@ public class TFTDAO {
 				e.printStackTrace();
 			}
 		}
-		System.out.println("TFTDAO : ¸ÅÄ¡»ó¼¼Á¤º¸ °¡Á®¿À±â ¿Ï·á");
+		System.out.println("TFTDAO : ë§¤ì¹˜ìƒì„¸ì •ë³´ ê°€ì ¸ì˜¤ê¸° ì™„ë£Œ");
 		if(jsons.size() == 0) {
 			
 		}
