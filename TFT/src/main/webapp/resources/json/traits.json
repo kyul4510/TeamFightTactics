@@ -1,0 +1,395 @@
+[
+  {
+    "key": "Set3_Blademaster",
+    "name": "검사",
+    "innate": "(3) 추가 공격 확률 30% / (6) 추가 공격 확률 60%",
+    "description": "검사는 기본 공격 시 일정 확률로 대상에게 두 번의 추가 공격을 가합니다. 추가 공격은 기본 공격 시의 피해를 입히며 적중 시 효과가 적용됩니다.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Blaster",
+    "name": "총잡이",
+    "innate": "(2) 추가 공격 3회 / (4) 추가 공격 6회",
+    "description": "총잡이는 네 번째 기본 공격마다 무작위 적에게 추가 공격을 가합니다. 추가 공격은 기본 공격 시의 피해를 입히며 적중 시 효과가 적용됩니다.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4
+      }
+    ]
+  },
+  {
+    "key": "Set3_Brawler",
+    "name": "싸움꾼",
+    "innate": "(2) 추가 체력 300 / (4) 추가 체력 700",
+    "description": "싸움꾼은 추가 최대 체력을 얻습니다.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "min": 4
+      }
+    ]
+  },
+  {
+    "key": "Set3_Celestial",
+    "name": "천상",
+    "innate": "(2) 회복량 15% / (4) 회복량 30% / (6) 회복량 60%",
+    "description": "모든 아군이 스킬과 기본 공격으로 입히는 피해량 중 일부만큼 체력을 회복합니다.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Chrono",
+    "name": "시공간",
+    "innate": "(2) 공격 속도 15% / (4) 공격 속도 35% / (6) 공격 속도 75%",
+    "description": "4초마다 모든 아군의 공격 속도가 증가합니다.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Cybernetic",
+    "name": "사이버네틱",
+    "innate": "(3) 체력 350 및 공격력 50 / (6) 체력 800 및 공격력 80",
+    "description": "사이버네틱 챔피언은 하나 이상의 아이템을 장착하면 체력과 공격력을 얻습니다.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "silver",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "DarkStar",
+    "name": "암흑의 별",
+    "innate": "(3) 공격력 및 주문력 +25 / (6) 공격력 및 주문력 +35",
+    "description": "암흑의 별 챔피언이 죽으면 모든 아군 암흑의 별 챔피언의 공격력 및 주문력이 증가합니다.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Demolitionist",
+    "name": "폭파광",
+    "innate": "(2) 폭파광에게 스킬 피해를 입은 대상은 1.50초 동안 기절합니다. (스킬 사용당 1회)",
+    "description": "",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 2
+      }
+    ]
+  },
+  {
+    "key": "Infiltrator",
+    "name": "잠입자",
+    "innate": "(2) 추가 공격 속도 50% / (4) 추가 공격 속도 80% (처치 관여 시 초기화)",
+    "description": "고유: 전투 시작 시 잠입자는 적의 후방으로 이동합니다. 전투 시작 시 잠입자의 공격 속도가 6초 동안 증가합니다.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4
+      }
+    ]
+  },
+  {
+    "key": "ManaReaver",
+    "name": "마나 약탈자",
+    "innate": "(2) 마나 약탈자의 공격이 대상의 다음 스킬 마나 소모량을 40% 증가시킵니다.",
+    "description": "",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4
+      }
+    ]
+  },
+  {
+    "key": "MechPilot",
+    "name": "메카 파일럿",
+    "innate": "(3) 전투 시작 시 무작위 메카 파일럿 챔피언 셋이 슈퍼 메카로 합체",
+    "description": "슈퍼 메카의 체력과 공격력, 특성은 파일럿들의 능력치를 모두 합친 값과 같으며 파일럿들의 아이템 중 3개를 무작위로 장착합니다. 슈퍼 메카가 죽으면 파일럿들이 탈출해 25의 마나를 얻은 상태로 전투를 계속합니다.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 3
+      }
+    ]
+  },
+  {
+    "key": "Mercenary",
+    "name": "용병",
+    "innate": "(1) 고유: 용병은 상점에서 스킬을 업그레이드 할 수 있습니다.",
+    "description": "",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Set3_Mystic",
+    "name": "신비술사",
+    "innate": "(2) 마법 저항력 35 / (4) 마법 저항력 105",
+    "description": "모든 아군이 마법 저항력을 얻습니다.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4
+      }
+    ]
+  },
+  {
+    "key": "Protector",
+    "name": "수호자",
+    "innate": "(2) 최대 체력의 20%만큼 보호막 / (4) 최대 체력의 30%만큼 보호막",
+    "description": "수호자는 스킬을 사용할 때 마다 4초 동안 보호막을 얻습니다. 이 보호막은 중첩되지 않습니다.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4
+      }
+    ]
+  },
+  {
+    "key": "Rebel",
+    "name": "반군",
+    "innate": "(3) 보호막 150 및 피해량 10% / (6) 보호막 225 및 피해량 12%",
+    "description": "전투 시작 시 반군은 주변에 있는 반군의 수에 따라 보호막을 얻고 입히는 피해량이 증가합니다.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Sniper",
+    "name": "저격수",
+    "innate": "(2) 저격수와 대상 사이에 놓인 칸 하나당 해당 저격수가 입히는 피해량이 15% 증가합니다.",
+    "description": "",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 2
+      }
+    ]
+  },
+  {
+    "key": "Set3_Sorcerer",
+    "name": "마법사",
+    "innate": "(2) 주문력 20% / (4) 주문력 40% / (6) 주문력 80%",
+    "description": "모든 아군의 주문력이 증가합니다.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "silver",
+        "min": 4,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "SpacePirate",
+    "name": "우주 해적",
+    "innate": "(2) 50% 확률로 1골드 획득 / (4) 50% 확률로 1골드 및 15% 확률로 기본 아이템 획득",
+    "description": "우주 해적 챔피언이 마무리 일격 시 일정 확률로 아이템이 추가로 떨어집니다.",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4
+      }
+    ]
+  },
+  {
+    "key": "StarGuardian",
+    "name": "별 수호자",
+    "innate": "(3) 총 마나 30 / (6) 총 마나 60",
+    "description": "별 수호자는 스킬 사용 시 다른 별 수호자들에게 마나를 부여합니다. (서로 적용)",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "silver",
+        "min": 3,
+        "max": 5
+      },
+      {
+        "style": "gold",
+        "min": 6
+      }
+    ]
+  },
+  {
+    "key": "Starship",
+    "name": "우주선",
+    "innate": "(1) 고유: 우주선은 매초 마나를 20씩 획득하며 전장 주위를 돕니다. 이동 방해 효과에 면역이지만, 기본 공격은 할 수 없습니다.",
+    "description": "",
+    "type": "class",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 1
+      }
+    ]
+  },
+  {
+    "key": "Valkyrie",
+    "name": "발키리",
+    "innate": "(2) 발키리는 체력이 50% 미만인 대상에게 기본 공격 또는 스킬 사용 시 항상 치명타가 적용됩니다.",
+    "description": "",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 2
+      }
+    ]
+  },
+  {
+    "key": "Vanguard",
+    "name": "선봉대",
+    "innate": "(2) 방어력 60 / (4) 방어력 250",
+    "description": "선봉대 챔피언은 추가 방어력을 얻습니다.",
+    "type": "class",
+    "sets": [
+      {
+        "style": "bronze",
+        "min": 2,
+        "max": 3
+      },
+      {
+        "style": "gold",
+        "min": 4
+      }
+    ]
+  },
+  {
+    "key": "Set3_Void",
+    "name": "공허",
+    "innate": "(3) 공허 챔피언의 기본 공격과 스킬은 고정 피해를 입힙니다.",
+    "description": "",
+    "type": "origin",
+    "sets": [
+      {
+        "style": "gold",
+        "min": 3
+      }
+    ]
+  }
+]

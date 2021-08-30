@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//src/main/webapp/WEB-INF/views/home.jsp=UTF-8
+encoding//src/main/webapp/resources/json/champions.json=UTF-8
+encoding//src/main/webapp/resources/json/items.json=UTF-8
+encoding//src/main/webapp/resources/json/traits.json=UTF-8

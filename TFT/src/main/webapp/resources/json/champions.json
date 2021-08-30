@@ -1,0 +1,464 @@
+[
+  {
+    "name": "아리",
+    "championId": "TFT3_Ahri",
+    "cost": 2,
+    "traits": [
+        "별 수호자",
+        "마법사"
+    ]
+  },
+  {
+    "name": "애니",
+    "championId": "TFT3_Annie",
+    "cost": 2,
+    "traits": [
+        "메카 파일럿",
+        "마법사"
+    ]
+  },
+  {
+    "name": "애쉬",
+    "championId": "TFT3_Ashe",
+    "cost": 3,
+    "traits": [
+        "천상",
+        "저격수"
+    ]
+  },
+  {
+    "name": "아우렐리온 솔",
+    "championId": "TFT3_AurelionSol",
+    "cost": 5,
+    "traits": [
+        "반군",
+        "우주선"
+    ]
+  },
+  {
+    "name": "블리츠크랭크",
+    "championId": "TFT3_Blitzcrank",
+    "cost": 2,
+    "traits": [
+        "시공간",
+        "싸움꾼"
+    ]
+  },
+  {
+    "name": "케이틀린",
+    "championId": "TFT3_Caitlyn",
+    "cost": 1,
+    "traits": [
+        "시공간",
+        "저격수"
+    ]
+  },
+  {
+    "name": "초가스",
+    "championId": "TFT3_ChoGath",
+    "cost": 4,
+    "traits": [
+        "공허",
+        "싸움꾼"
+    ]
+  },
+  {
+    "name": "다리우스",
+    "championId": "TFT3_Darius",
+    "cost": 2,
+    "traits": [
+        "우주 해적",
+        "마나 약탈자"
+    ]
+  },
+  {
+    "name": "에코",
+    "championId": "TFT3_Ekko",
+    "cost": 5,
+    "traits": [
+        "사이버네틱",
+        "Infiltrato"
+    ]
+  },
+  {
+    "name": "이즈리얼",
+    "championId": "TFT3_Ezreal",
+    "cost": 3,
+    "traits": [
+        "시공간",
+        "총잡이"
+    ]
+  },
+  {
+    "name": "피오라",
+    "championId": "TFT3_Fiora",
+    "cost": 1,
+    "traits": [
+        "사이버네틱",
+        "검사"
+    ]
+  },
+  {
+    "name": "피즈",
+    "championId": "TFT3_Fizz",
+    "cost": 4,
+    "traits": [
+        "메카 파일럿",
+        "잠입자"
+    ]
+  },
+  {
+    "name": "갱플랭크",
+    "championId": "TFT3_Gangplank",
+    "cost": 5,
+    "traits": [
+        "우주 해적",
+        "용병",
+        "폭파광"
+    ]
+  },
+  {
+    "name": "그레이브즈",
+    "championId": "TFT3_Graves",
+    "cost": 1,
+    "traits": [
+        "우주 해적",
+        "총잡이"
+    ]
+  },
+  {
+    "name": "이렐리아",
+    "championId": "TFT3_Irelia",
+    "cost": 4,
+    "traits": [
+        "사이버네틱",
+        "마나 약탈자",
+        "검사"
+    ]
+  },
+  {
+    "name": "자르반 4세",
+    "championId": "TFT3_JarvanIV",
+    "cost": 1,
+    "traits": [
+        "암흑의 별",
+        "수호자"
+    ]
+  },
+  {
+    "name": "제이스",
+    "championId": "TFT3_Jayce",
+    "cost": 3,
+    "traits": [
+        "우주 해적",
+        "선봉대"
+    ]
+  },
+  {
+    "name": "진",
+    "championId": "TFT3_Jhin",
+    "cost": 4,
+    "traits": [
+        "암흑의 별",
+        "저격수"
+    ]
+  },
+  {
+    "name": "징크스",
+    "championId": "TFT3_Jinx",
+    "cost": 4,
+    "traits": [
+        "반군",
+        "총잡이"
+    ]
+  },
+  {
+    "name": "카이사",
+    "championId": "TFT3_KaiSa",
+    "cost": 2,
+    "traits": [
+        "발키리",
+        "잠입자"
+    ]
+  },
+  {
+    "name": "카르마",
+    "championId": "TFT3_Karma",
+    "cost": 3,
+    "traits": [
+        "암흑의 별",
+        "신비술사"
+    ]
+  },
+  {
+    "name": "카사딘",
+    "championId": "TFT3_Kassadin",
+    "cost": 3,
+    "traits": [
+        "천상",
+        "마나 약탈자"
+    ]
+  },
+  {
+    "name": "케일",
+    "championId": "TFT3_Kayle",
+    "cost": 4,
+    "traits": [
+        "발키리",
+        "검사"
+    ]
+  },
+  {
+    "name": "카직스",
+    "championId": "TFT3_KhaZix",
+    "cost": 1,
+    "traits": [
+        "공허",
+        "잠입자"
+    ]
+  },
+  {
+    "name": "레오나",
+    "championId": "TFT3_Leona",
+    "cost": 1,
+    "traits": [
+        "사이버네틱",
+        "선봉대"
+    ]
+  },
+  {
+    "name": "루시안",
+    "championId": "TFT3_Lucian",
+    "cost": 2,
+    "traits": [
+        "사이버네틱",
+        "총잡이"
+    ]
+  },
+  {
+    "name": "룰루",
+    "championId": "TFT3_Lulu",
+    "cost": 5,
+    "traits": [
+        "천상",
+        "신비술사"
+    ]
+  },
+  {
+    "name": "럭스",
+    "championId": "TFT3_Lux",
+    "cost": 3,
+    "traits": [
+        "암흑의 별",
+        "마법사"
+    ]
+  },
+  {
+    "name": "말파이트",
+    "championId": "TFT3_Malphite",
+    "cost": 1,
+    "traits": [
+        "반군",
+        "싸움꾼"
+    ]
+  },
+  {
+    "name": "마스터이",
+    "championId": "TFT3_MasterYi",
+    "cost": 3,
+    "traits": [
+        "반군",
+        "검사"
+    ]
+  },
+  {
+    "name": "미스포츈",
+    "championId": "TFT3_MissFortune",
+    "cost": 5,
+    "traits": [
+        "발키리",
+        "용병",
+        "총잡이"
+    ]
+  },
+  {
+    "name": "모데카이저",
+    "championId": "TFT3_Mordekaiser",
+    "cost": 2,
+    "traits": [
+        "암흑의 별",
+        "선봉대"
+    ]
+  },
+  {
+    "name": "니코",
+    "championId": "TFT3_Neeko",
+    "cost": 3,
+    "traits": [
+        "별 수호자",
+        "수호자"
+    ]
+  },
+  {
+    "name": "뽀삐",
+    "championId": "TFT3_Poppy",
+    "cost": 1,
+    "traits": [
+        "별 수호자",
+        "선봉대"
+    ]
+  },
+  {
+    "name": "라칸",
+    "championId": "TFT3_Rakan",
+    "cost": 2,
+    "traits": [
+        "천상",
+        "수호자"
+    ]
+  },
+  {
+    "name": "럼블",
+    "championId": "TFT3_Rumble",
+    "cost": 3,
+    "traits": [
+        "메카 파일럿",
+        "폭파광"
+    ]
+  },
+  {
+    "name": "샤코",
+    "championId": "TFT3_Shaco",
+    "cost": 3,
+    "traits": [
+        "암흑의 별",
+        "잠입자"
+    ]
+  },
+  {
+    "name": "쉔",
+    "championId": "TFT3_Shen",
+    "cost": 2,
+    "traits": [
+        "시공간",
+        "검사"
+    ]
+  },
+  {
+    "name": "소나",
+    "championId": "TFT3_Sona",
+    "cost": 2,
+    "traits": [
+        "반군",
+        "신비술사"
+    ]
+  },
+  {
+    "name": "소라카",
+    "championId": "TFT3_Soraka",
+    "cost": 4,
+    "traits": [
+        "별 수호자",
+        "신비술사"
+    ]
+  },
+  {
+    "name": "신드라",
+    "championId": "TFT3_Syndra",
+    "cost": 3,
+    "traits": [
+        "별 수호자",
+        "마법사"
+    ]
+  },
+  {
+    "name": "쓰레쉬",
+    "championId": "TFT3_Thresh",
+    "cost": 5,
+    "traits": [
+        "시공간",
+        "마나 약탈자"
+    ]
+  },
+  {
+    "name": "트위스티드페이트",
+    "championId": "TFT3_TwistedFate",
+    "cost": 1,
+    "traits": [
+        "시공간",
+        "마법사"
+    ]
+  },
+  {
+    "name": "벨코즈",
+    "championId": "TFT3_VelKoz",
+    "cost": 4,
+    "traits": [
+        "공허",
+        "마법사"
+    ]
+  },
+  {
+    "name": "바이",
+    "championId": "TFT3_Vi",
+    "cost": 3,
+    "traits": [
+        "사이버네틱",
+        "싸움꾼"
+    ]
+  },
+  {
+    "name": "오공",
+    "championId": "TFT3_WuKong",
+    "cost": 4,
+    "traits": [
+        "시공간",
+        "선봉대"
+    ]
+  },
+  {
+    "name": "자야",
+    "championId": "TFT3_Xayah",
+    "cost": 1,
+    "traits": [
+        "천상",
+        "검사"
+    ]
+  },
+  {
+    "name": "신짜오",
+    "championId": "TFT3_XinZhao",
+    "cost": 2,
+    "traits": [
+        "천상",
+        "수호자"
+    ]
+  },
+  {
+    "name": "야스오",
+    "championId": "TFT3_Yasuo",
+    "cost": 2,
+    "traits": [
+        "반군",
+        "검사"
+    ]
+  },
+  {
+    "name": "직스",
+    "championId": "TFT3_Ziggs",
+    "cost": 1,
+    "traits": [
+        "반군",
+        "폭파광"
+    ]
+  },
+  {
+    "name": "조이",
+    "championId": "TFT3_Zoe",
+    "cost": 1,
+    "traits": [
+        "별 수호자",
+        "마법사"
+    ]
+  }
+]
